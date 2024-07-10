@@ -67,7 +67,7 @@ body{
 /** Article 2 **/
 
 .card--info__title{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 900;   
     margin-bottom: 1rem;
 }
@@ -84,7 +84,7 @@ body{
     color: var(--Grey);
     font-weight: 600;
     margin-bottom: 1.5rem;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /** Article 3 **/
@@ -108,7 +108,7 @@ body{
 }
 @media only screen and (min-width: 1140px )  {
     .card{
-        width: 25%;
+        width: 26%;
     }
 }
 
