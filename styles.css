@@ -1,0 +1,124 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    --fuente-principal: "Figtree", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Figtree", sans-serif;
+}
+body{
+    font-size: 16px;
+}
+/* Main */
+.container{
+    background-color: var(--Yellow);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section */
+.card{
+    width: 80%;
+    border: 3px solid var(--Black);
+    border-radius: 20px;
+    background-color: var(--White);
+    box-shadow: 9px 9px 0px 0px rgba(0,0,0,0.75);
+    padding: 1.5rem;
+}
+/* article #1 */
+.card--head__svg{
+    width: 100%;
+}
+.card--head__svg img{
+    width: 100%;
+    border-radius: 16px;
+}
+.card--head__learn{
+    background-color: var(--Yellow);
+    padding: 5px 10px;
+    margin: 1rem 0 1rem 0;
+    width: 5rem;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: var(--fuente-principal);
+    font-weight: 900;
+    text-align: center;
+}
+.card--head__date{
+    font-family: var(--fuente-principal);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+/** Article 2 **/
+
+.card--info__title{
+    font-size: 1.3em;
+    font-weight: 900;   
+    margin-bottom: 1rem;
+}
+.card--info__title a{
+    color: var(--Black);
+    text-decoration: none;
+}
+
+.card--info__title a:hover{
+    color: var(--Yellow);
+}
+.card--info__text{
+    line-height: 1.5;
+    color: var(--Grey);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 13px;
+}
+
+/** Article 3 **/
+.card--profile{
+    display: flex;
+    align-items: center;
+}
+.card--profile__img img{
+    width: 2rem;margin-right: 1rem;
+}
+.card--profile__text{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+/** Media Query **/
+@media only screen and (min-width: 768px )  {
+    .card{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1140px )  {
+    .card{
+        width: 25%;
+    }
+}
+
+
+/** Footer **/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
